@@ -17,6 +17,7 @@ int main() {
     std::cin >> F;
 
     double E {(0.25*M) + (0.75*F)};
+    std::cout << std::endl << "Exam grade is " << E << std::endl;
     double G{0};
 
     if(E<=45){
@@ -27,7 +28,7 @@ int main() {
       G = (1-(0.33*Q))*(E) + (0.33*Q*P);
     }
     else{
-      G = (0.5 * F) + ((1/6) * M) + ((1/3) * P);
+      G = (0.5 * F) + (0.16667 * M) + (0.333 * P);
     }
       
 
